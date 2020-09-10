@@ -1,6 +1,6 @@
 #include "Card.h"
-#include <stdlib.h>
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
     
 
@@ -22,10 +22,13 @@ using namespace std;
         } else {
             if (rank>='2' && rank<='9') {
                 return rank-48;
+                
             } else {
                 if (rank=='J'||rank=='Q'||rank=='K'||rank=='T') {
+                    
                     return 10;
                 } else {
+                    
                     return 0;
                 }
             }
@@ -34,6 +37,7 @@ using namespace std;
     void Card:: showCard(){
         if (rank=='T'){
             cout<<"10"<<suit;
+            
         } else {
           cout<<rank<<suit;
         }

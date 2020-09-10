@@ -3,8 +3,16 @@
 #include <iostream>
 using namespace std;
 
+//Rowland Sanders
+//CECS 282-04
+//Prog1 - SolitairePrime
+//09/09/2020
+//I certify that this program is my own original work. I did not copy any part of this program from            
+//any other source. I further certify that I typed each and every line of code in this program
+
 int menu(){
-    std::cout << "Welcome to Solitaire Prime!\n 1) New Deck\n 2) Display Deck\n 3) Shuffle Deck\n 4) Play Solitaire Prime\n 5) Exit\n";
+    
+    cout << "Welcome to Solitaire Prime!\n 1) New Deck\n 2) Display Deck\n 3) Shuffle Deck\n 4) Play Solitaire Prime\n 5) Exit\n";
     int userchoice;
     cin>>userchoice;
     return userchoice;
@@ -27,7 +35,7 @@ int menu(){
 int main(int argc, const char * argv[]) { //argc means "argument count". It signifies how many arguments are being passed into the executable. argv means "argument values". It is a pointer to an array of characters. Or to think about it in another way, it is an array of C strings (since C strings are just arrays of characters).
     
     Deck deck;
-    int userchoice=0;
+    int userchoice = 0;
     
     while (userchoice != 5) {
         userchoice = menu();
@@ -48,7 +56,8 @@ int main(int argc, const char * argv[]) { //argc means "argument count". It sign
         
     else if
                     (userchoice == 4) {
-                        cout<<"Playing solitaire prime!!!\n";
+                        cout<<"Playing Solitaire Prime!!!\n";
+                        
                         int total = 0;
                         int primecount = 0;
                         int finish = 0;
